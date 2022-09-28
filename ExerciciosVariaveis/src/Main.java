@@ -1,4 +1,4 @@
-import ExerciciosLista1.SalarioFuncionario;
+import ExerciciosLista1.ConversorReal;
 
 public class Main {
 
@@ -21,8 +21,12 @@ public class Main {
         //calcular.atribuirIdade();
 
         //Rodar o exercicio 5
-        SalarioFuncionario calcular = new SalarioFuncionario();
-        calcular.CalcularSalario();
+        //SalarioFuncionario calcular = new SalarioFuncionario();
+        //calcular.CalcularSalario();
+
+        //Rodar exercicio 6
+        //ConversorReal converter = new ConversorReal();
+        //converter.ConverterReal();
 
     }
 }
