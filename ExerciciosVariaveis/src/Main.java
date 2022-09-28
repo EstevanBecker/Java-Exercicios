@@ -1,4 +1,5 @@
 import ExerciciosLista1.ConversorReal;
+import ExerciciosLista1.CalculadoraBasica;
 
 public class Main {
 
@@ -28,5 +29,8 @@ public class Main {
         //ConversorReal converter = new ConversorReal();
         //converter.ConverterReal();
 
+        //Rodar exercicio 7
+        //CalculadoraBasica calculos = new CalculadoraBasica();
+        //calculos.CalcularNumeros();
     }
 }
