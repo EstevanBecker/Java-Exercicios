@@ -1,3 +1,4 @@
+//7.Crie um programa que receba 2 números e ao final mostre as seguintes operações:
 package ExerciciosLista1;
 import java.util.Scanner;
 import java.lang.Math;
