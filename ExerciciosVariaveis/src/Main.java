@@ -1,5 +1,6 @@
 import ExerciciosLista1.ConversorReal;
 import ExerciciosLista1.CalculadoraBasica;
+import ExerciciosLista1.NotasAlunos;
 
 public class Main {
 
@@ -36,5 +37,9 @@ public class Main {
         //Rodar exercicio 8
         //viagemKm calculadora = new viagemKm();
         //calculadora.calcularKml();
+
+        //Rodar exercicio 9
+        //NotasAlunos calcular = new NotasAlunos();
+        //calcular.calcularNotas();
     }
 }
