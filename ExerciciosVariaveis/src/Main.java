@@ -32,5 +32,9 @@ public class Main {
         //Rodar exercicio 7
         //CalculadoraBasica calculos = new CalculadoraBasica();
         //calculos.CalcularNumeros();
+
+        //Rodar exercicio 8
+        //viagemKm calculadora = new viagemKm();
+        //calculadora.calcularKml();
     }
 }
