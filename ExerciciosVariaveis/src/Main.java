@@ -44,7 +44,7 @@ public class Main {
         //calcular.calcularNotas();
 
         //Rodar exercicio 10
-        ValorDepositado calcular = new ValorDepositado();
-        calcular.DepositarValor();
+        //ValorDepositado calcular = new ValorDepositado();
+        //calcular.DepositarValor();
     }
 }
