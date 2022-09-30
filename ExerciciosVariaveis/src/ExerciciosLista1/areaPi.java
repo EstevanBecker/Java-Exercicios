@@ -9,7 +9,7 @@ public class areaPi {
         System.out.println ("Escreva o raio do circulo");
         double raioCirculo = meuScanner.nextDouble();
 
-        double calculoPi = valorPi * Math.pow(raioCirculo);
+        double calculoPi = valorPi * (raioCirculo * raioCirculo);
 
         System.out.println ("A Area desse circulo é de: " +calculoPi);
     }
