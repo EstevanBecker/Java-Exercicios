@@ -1,7 +1,7 @@
 package ExerciciosLista1;
 import java.util.Scanner;
 public class VendaProduto {
-    public void calcularCustoVenda {
+    public void calcularCustoVenda() {
         Scanner meuScanner = new Scanner(System.in);
 
         System.out.println ("Informe o preço de custo deste produto");
