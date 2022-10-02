@@ -26,10 +26,10 @@ public class SelecaoDeNumeros {
     }
     public void guardarNumeros(int numeroRecebido) {
         entradaNumeros.add(numeroRecebido);
-        Collections.sort(entradaNumeros);
     }
 
     public void MostrarNumeros() {
+        Collections.sort(entradaNumeros);
         int menorNumero = entradaNumeros.get(0);
         System.out.println ("O Menor numero recebido foi " + menorNumero);
 
