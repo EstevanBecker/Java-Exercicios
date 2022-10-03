@@ -1,18 +1,16 @@
 package Objetos;
-import java.util.ArrayList;
-import Objetos.ListagemDeCarros;
 import java.util.Scanner;
 
 public class ListaDeCarros {
-    ListagemDeCarros[] listaDeCarros = {
-            new ListagemDeCarros (" Gol ", " Gasolina ", 12, 22, 50),
-            new ListagemDeCarros (" Corsa ", " Etanol ", 7, 20, 80),
-            new ListagemDeCarros (" Saveiro ", " Gasolina ", 10, 30, 90)};
+    Carro[] listaDeCarros = {
+            new Carro(" Gol ", " Gasolina ", 12, 22, 50),
+            new Carro(" Corsa ", " Etanol ", 7, 20, 80),
+            new Carro(" Saveiro ", " Gasolina ", 10, 30, 90)};
 
     public void ListarCarros(){
         int selecaoCarro;
         int i = 1;
-        for (ListagemDeCarros listaDeCarro : listaDeCarros) {
+        for (Carro listaDeCarro : listaDeCarros) {
             System.out.print(i + ".");
             System.out.println ("Carros:" + listaDeCarro.marca + "Tipo de combustível " + listaDeCarro.tipoCombustivel + "quantidade de Litros por km " + listaDeCarro.kmPorLitro + "quantidade de combustivel no tanque: " + listaDeCarro.quantidadeCombustivel + "Capacidade de combustivel " + listaDeCarro.capacidadeCombustivel);
             i++;

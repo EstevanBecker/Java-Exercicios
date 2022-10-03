@@ -1,13 +1,13 @@
 package Objetos;
 
-public class ListagemDeCarros {
+public class Carro {
     String marca;
     String tipoCombustivel;
     double kmPorLitro;
     double quantidadeCombustivel;
     double capacidadeCombustivel;
 
-    public ListagemDeCarros (String marca, String tipoCombustivel, double kmPorLitro, double quantidadeCombustivel, double capacidadeCombustivel) {
+    public Carro(String marca, String tipoCombustivel, double kmPorLitro, double quantidadeCombustivel, double capacidadeCombustivel) {
         this.marca = marca;
         this.tipoCombustivel = tipoCombustivel;
         this.kmPorLitro = kmPorLitro;
