@@ -15,7 +15,7 @@ public class ListaDeCarros {
         int i = 1;
         for (Carro listaDeCarro : listaDeCarros) {
             System.out.print(i + ".");
-            System.out.println ("Carros:" + listaDeCarro.marca + "Tipo de combustível " + listaDeCarro.tipoCombustivel + "quantidade de Litros por km " + listaDeCarro.kmPorLitro + "quantidade de combustivel no tanque: " + listaDeCarro.quantidadeCombustivel + "Capacidade de combustivel " + listaDeCarro.capacidadeCombustivel);
+            System.out.println ("Carros:" + listaDeCarro.marca + "| Tipo de combustível:" + listaDeCarro.tipoCombustivel + "| quantidade de Litros por km:" + listaDeCarro.kmPorLitro + "| quantidade de combustivel no tanque: " + listaDeCarro.quantidadeCombustivel + "| Capacidade de combustivel:" + listaDeCarro.capacidadeCombustivel);
             i++;
         }
         selecaoCarro = selecionarCarro();
