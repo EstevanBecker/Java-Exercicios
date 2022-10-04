@@ -58,26 +58,32 @@ public class MenuDeCarros {
                 System.out.println("Você possui" + listaDeCarros[selecaoCarro-1].quantidadeCombustivel + " Litros, após a viagem terá" + qtdLitrosUtilizados + "Litros");
             } else {
                 System.out.println("É Necessário abastecer antes");
-                Abastecer(selecaoCarro);
+                Abastecer(selecaoCarro, calcViagem);
             }
         }
         return selecionarAndar;
     }
 
-    public double Abastecer(int selecaoCarro){
+    public double Abastecer(int selecaoCarro, double calcViagem){
+        double qtdCombustivelAbastecido = 0.0;
        System.out.println ("O Carro atualmente possui " + listaDeCarros[selecaoCarro-1].quantidadeCombustivel + "Litros, quanto o senhor deseja abastecer?");
        double abastecer = meuScanner.nextDouble();
-       double qtdAtualCombustivel = ((abastecer + listaDeCarros[selecaoCarro-1].quantidadeCombustivel));
-       if (qtdAtualCombustivel > listaDeCarros[selecaoCarro-1].capacidadeCombustivel) {
+       double qtdAtualCombustivel= ((abastecer + listaDeCarros[selecaoCarro-1].quantidadeCombustivel));
+       qtdCombustivelAbastecido = ((qtdAtualCombustivel + listaDeCarros[selecaoCarro-1].quantidadeCombustivel));
+       if (abastecer > listaDeCarros[selecaoCarro-1].capacidadeCombustivel) {
            System.out.println ("O Valor excede a capacidade de litros suportados no carro");
-           Abastecer(selecaoCarro);
        }
-       else {
-           System.out.println ("Você abasteceu " + abastecer + "litros, seu carro agora está com " + qtdAtualCombustivel + "litros e pode realizar essa viagem");
-           calcularGasto (selecaoCarro, abastecer, qtdAtualCombustivel);
+       else if (qtdAtualCombustivel >= calcViagem) {
+           System.out.println ("Você abasteceu " + abastecer + "litros, seu carro agora está com " + qtdCombustivelAbastecido + "litros e pode realizar essa viagem");
+           calcularGasto(selecaoCarro, abastecer, qtdAtualCombustivel);
        }
+       while (qtdCombustivelAbastecido < calcViagem) {
+            Abastecer(selecaoCarro, calcViagem);
+        }
        return abastecer;
     }
+
+
     public void calcularGasto (int selecaoCarro, double abastecer, double qtdAtualCombustivel) {
         double precoGasolina = 5.74;
         double precoEtanol = 3.80;
