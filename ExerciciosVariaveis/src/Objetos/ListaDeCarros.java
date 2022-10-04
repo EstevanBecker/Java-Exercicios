@@ -8,6 +8,8 @@ public class ListaDeCarros {
             new Carro(" Corsa ", " Etanol ", 7, 20, 80),
             new Carro(" Saveiro ", " Gasolina ", 10, 30, 90)};
 
+    Scanner meuScanner = new Scanner(System.in);
+
     public void ListarCarros(){
         int selecaoCarro;
         int i = 1;
@@ -32,7 +34,6 @@ public class ListaDeCarros {
     }
     public int selecionarCarro(){
         int selecionar;
-        Scanner meuScanner = new Scanner(System.in);
         System.out.println ("Selecione um código");
         selecionar = meuScanner.nextInt();
         return selecionar;
@@ -40,7 +41,6 @@ public class ListaDeCarros {
 
     public int selecionarAndar(){
         int selecionarAndar;
-        Scanner meuScanner = new Scanner(System.in);
         System.out.println ("Caso deseje andar digite 1, caso deseje abastecer digite 2, caso deseje encerrar digite 3");
         selecionarAndar = meuScanner.nextInt();
         return selecionarAndar;
