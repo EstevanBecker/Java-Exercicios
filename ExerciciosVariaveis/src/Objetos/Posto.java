@@ -22,7 +22,7 @@ public class Posto {
         }
         else if (qtdAtualCombustivel >= calcViagem) {
             System.out.println ("Você abasteceu " + abastecer + "litros, seu carro agora está com " + qtdAtualCombustivel + "litros e pode realizar essa viagem");
-            calcularGasto(selecaoCarro, abastecer, qtdAtualCombustivel);
+            calcularGasto(selecaoCarro, abastecer);
             carroEscolhido.quantidadeCombustivel = qtdAtualCombustivel;
         }
 
@@ -33,7 +33,7 @@ public class Posto {
     }
 
 
-    public void calcularGasto (int selecaoCarro, double abastecer, double qtdAtualCombustivel) {
+    public void calcularGasto (int selecaoCarro, double abastecer) {
         double precoGasolina = 5.74;
         double precoEtanol = 3.80;
         Carro carroEscolhido = listaDeCarros[selecaoCarro-1];
@@ -46,6 +46,18 @@ public class Posto {
             double calcGastoEtanol = abastecer*precoEtanol;
             System.out.println ("Seu gasto foi de R$" +calcGastoEtanol);
         }
+    }
+
+    public void somenteAbastecer (int selecaoCarro) {
+        Carro carroEscolhido = listaDeCarros[selecaoCarro-1];
+        System.out.println("Quanto o senhor deseje colocar de combustível?");
+        double abastecer = meuScanner.nextDouble();
+
+        double qtdCombustivelAtual = (abastecer + carroEscolhido.quantidadeCombustivel);
+        carroEscolhido.quantidadeCombustivel = qtdCombustivelAtual;
+        System.out.println("Seu carro está com: " + carroEscolhido.quantidadeCombustivel + " Litros");
+        calcularGasto(selecaoCarro, abastecer);
+        
     }
 }
 

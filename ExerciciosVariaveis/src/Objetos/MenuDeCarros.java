@@ -20,7 +20,6 @@ public class MenuDeCarros {
         }
         int selecaoCarro = selecionarCarro();
 
-
     }
 
     public int selecionarCarro() {
@@ -72,6 +71,13 @@ public class MenuDeCarros {
                 System.out.println("É Necessário abastecer antes");
                 posto.abastecer(selecaoCarro, calcViagem);
             }
+        }
+
+        if (selecionarAndar == 2) {
+            posto.somenteAbastecer(selecaoCarro);
+        } else if (selecionarAndar == 3) {
+            System.out.println("Até logo");
+
         }
 
         return selecionarAndar;
