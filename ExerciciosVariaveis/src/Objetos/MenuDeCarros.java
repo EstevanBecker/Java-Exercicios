@@ -11,7 +11,7 @@ public class MenuDeCarros {
 
     Scanner meuScanner = new Scanner(System.in);
 
-    public void ListarCarros() {
+    public void listarCarros() {
         //int selecaoCarro;
         int i = 1;
         for (Carro listaDeCarro : listaDeCarros) {

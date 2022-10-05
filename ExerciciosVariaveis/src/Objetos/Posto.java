@@ -57,7 +57,7 @@ public class Posto {
         carroEscolhido.quantidadeCombustivel = qtdCombustivelAtual;
         System.out.println("Seu carro está com: " + carroEscolhido.quantidadeCombustivel + " Litros");
         calcularGasto(selecaoCarro, abastecer);
-        
+
     }
 }
 
