@@ -15,7 +15,7 @@ public class Posto {
         double abastecer = meuScanner.nextDouble();
         double qtdAtualCombustivel= (abastecer + carroEscolhido.quantidadeCombustivel);
         //qtdCombustivelAbastecido = ((qtdAtualCombustivel + carroEscolhido.quantidadeCombustivel));
-
+    
         if (qtdAtualCombustivel > carroEscolhido.capacidadeCombustivel) {
             System.out.println ("O Valor excede a capacidade de litros suportados no carro");
             // TODO pedir outro valor
@@ -43,7 +43,7 @@ public class Posto {
             System.out.println ("Seu gasto foi de R$" + calcGastoGasolina);
         }
         else {
-            double calcGastoEtanol = abastecer*precoEtanol;
+            double calcGastoEtanol = abastecer * precoEtanol;
             System.out.println ("Seu gasto foi de R$" +calcGastoEtanol);
         }
     }
