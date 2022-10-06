@@ -38,7 +38,7 @@ public class MenuDeCarros {
                 System.out.println("Voce escolheu a saveiro");
                 break;
             default:
-                System.out.println("Voce escolheu um valor incorreto, favor tente novamente");
+                System.out.println("Voce escolheu um carro inexistente, favor tente novamente");
                 selecionarCarro();
                 break;
         }
